@@ -5,30 +5,30 @@ from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.pipeline import Pipeline
 from sklearn.linear_model import LinearRegression
 
-def preprocess_rent_data(rent_df):
+def preprocess_data(df,target_col):
     """
-    Written for rent data; will drop null values and 
+    #will drop null values and 
     split into training and testing sets. Uses price
     as the target column.
     """
-    raw_num_df_rows = len(rent_df)
-    rent_df = rent_df.dropna()
-    remaining_num_df_rows = len(rent_df)
+    raw_num_df_rows = len(df)
+    df = df.dropna()
+    remaining_num_df_rows = len(df)
     percent_na = (
         (raw_num_df_rows - remaining_num_df_rows) / raw_num_df_rows * 100
     )
     print(f"Dropped {round(percent_na,2)}% rows")
-    X = rent_df.drop(columns='price')
-    y = rent_df['price'].values.reshape(-1, 1)
+    X = df.drop(columns='')
+    y = df[''].values.reshape(-1, 1)
     return train_test_split(X, y)
 
-def preprocess_rent_data_keep_na(rent_df):
+def preprocess_data_keep_na(df):
     """
-    Written for rent data; will split into training
+    # split into training
     and testing sets. Uses price as the target column.
     """
-    X = rent_df.drop(columns='price')
-    y = rent_df['price'].values.reshape(-1, 1)
+    X = df.drop(columns='')
+    y = df[''].values.reshape(-1, 1)
     return train_test_split(X, y)
 
 def r2_adj(x, y, model):
@@ -51,7 +51,7 @@ def check_metrics(X_test, y_test, model):
 
     return r2_adj(X_test, y_test, model)
 
-def get_best_pipeline(pipeline, pipeline2, rent_df):
+def get_best_pipeline(pipeline, pipeline2, df):
     """
     Accepts two pipelines and rent data.
     Uses two different preprocessing functions to 
@@ -60,7 +60,7 @@ def get_best_pipeline(pipeline, pipeline2, rent_df):
     best.
     """
     # Apply the preprocess_rent_data step
-    X_train, X_test, y_train, y_test = preprocess_rent_data(rent_df)
+    X_train, X_test, y_train, y_test = preprocess_data(df)
 
     # Fit the first pipeline
     pipeline.fit(X_train, y_train)
