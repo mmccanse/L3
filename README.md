@@ -34,7 +34,7 @@ The objective of this project was to explore supervised and unsupervised models 
     - First ran Random Forest Regression for availability and price, followed by Random Forest Classifier for cluster
 
 5. **Optimization**: 
-Please see the following excel for detail list of how we optimize the model:  [Analysis process, files to use](https://github.com/mmccanse/L3/blob/main/Analysis%20process%2C%20files%20to%20use.csv){:target="_blank"}
+Please see the following excel for detail list of how we optimize the model:  [Analysis process, files to use](https://github.com/mmccanse/L3/blob/main/Analysis%20process%2C%20files%20to%20use.csv)
 
 ## Executive Summary
 This project aims to analyze the Denver AirBnB landscape to identify patterns and make recommendations for property owners. By leveraging machine learning techniques, we segmented Denver AirBnB properties, predicted their ratings, availability, and identified key features influencing overall ratings.
