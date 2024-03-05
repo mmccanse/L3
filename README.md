@@ -10,6 +10,12 @@ The objective of this project was to explore supervised and unsupervised models 
 - StackOverflow
 - Copilot
 
+## Team Contributions
+- Meredith focused on data transformation and random forest models.
+- Jennifer led the data analysis and modeling efforts.
+- Sonja handled business analysis and posed critical questions for further research.
+- The entire team was involved in data preparation, model experimentation, and problem-solving.
+
 ## Method
 1. **Data Selection**:
     - We utlize the same AirBnB data as our project 1 
