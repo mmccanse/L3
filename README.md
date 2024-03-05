@@ -1,4 +1,4 @@
-# Project Title: L^3:  Listing Location Learnings
+# Project Title: L^3:  Listing Learning Labyrinth
 
 ## Objective
 The objective of this project was to explore supervised and unsupervised models of AirBnB data from 2023. 
