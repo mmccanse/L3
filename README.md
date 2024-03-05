@@ -40,6 +40,9 @@ Please see the following excel for detail list of how we optimize the model:  [A
 This project aims to analyze the Denver AirBnB landscape to identify patterns and make recommendations for property owners. By leveraging machine learning techniques, we segmented Denver AirBnB properties, predicted their ratings, availability, and identified key features influencing overall ratings.
 
 ## Findings
+The full report you can find here: [L3 presentation - Project 2](https://github.com/mmccanse/L3/blob/main/L3%20presentation.pdf)
+
+Overall L^3 was able to:
 - Successfully predicted overall ratings, clusters/segments
 - Identified feature importance for overall ratings
 - Models did not successfully predict price, 30 day availability
